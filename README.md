@@ -6,4 +6,10 @@ Some headsets (for example Steam Frame) have an issue where the presence detecto
 
 ## Installation
 
+Prerequisites (each of them can be installed by extracting its release `.zip` file into the BeatSaber's directory):
+
+* https://nike4613.github.io/BeatSaber-IPA-Reloaded/
+* https://github.com/monkeymanboy/BeatSaberMarkupLanguage
+* https://github.com/Auros/SiraUtil
+
 Download the .dll from the releases page & put it in the BeatSaber's `Plugins/` directory. The mod should be loaded automatically on the next startup.
