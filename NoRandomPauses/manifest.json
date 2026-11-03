@@ -1,0 +1,13 @@
+{
+  "id": "NoRandomPauses",
+  "name": "No Random Pauses",
+  "author": "maf",
+  "version": "1.0.0",
+    "description": "Prevents the game from randomly pausing while a song is playing. Some headsets (for example Steam Frame) have an issue where the presence detector randomly fails every now and then. This mod suppresses these one-off failures.",
+  "gameVersion": "1.44.1",
+  "dependsOn": {
+    "BSIPA": "^4.3.7",
+    "BeatSaberMarkupLanguage": "^1.14.1",
+    "SiraUtil": "^3.3.1"
+  }
+}

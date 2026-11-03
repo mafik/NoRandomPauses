@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <AssemblyName>NoRandomPauses</AssemblyName>
+    <RootNamespace>NoRandomPauses</RootNamespace>
+    <Version>1.0.0</Version>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <DebugType>portable</DebugType>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+    <Managed>$(BeatSaberDir)/Beat Saber_Data/Managed</Managed>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net472" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="manifest.json" LogicalName="NoRandomPauses.manifest.json" />
+    <EmbeddedResource Include="UI/Settings.bsml" LogicalName="NoRandomPauses.UI.Settings.bsml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="mscorlib" HintPath="$(Managed)/mscorlib.dll" Private="false" />
+    <Reference Include="netstandard" HintPath="$(Managed)/netstandard.dll" Private="false" />
+    <Reference Include="System" HintPath="$(Managed)/System.dll" Private="false" />
+    <Reference Include="System.Core" HintPath="$(Managed)/System.Core.dll" Private="false" />
+    <Reference Include="UnityEngine" HintPath="$(Managed)/UnityEngine.dll" Private="false" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="$(Managed)/UnityEngine.CoreModule.dll" Private="false" />
+    <Reference Include="Main" HintPath="$(Managed)/Main.dll" Private="false" />
+    <Reference Include="HMLib" HintPath="$(Managed)/HMLib.dll" Private="false" />
+    <Reference Include="HMUI" HintPath="$(Managed)/HMUI.dll" Private="false" />
+    <Reference Include="BeatSaber.ViewSystem" HintPath="$(Managed)/BeatSaber.ViewSystem.dll" Private="false" />
+    <Reference Include="Zenject" HintPath="$(Managed)/Zenject.dll" Private="false" />
+    <Reference Include="Zenject-usage" HintPath="$(Managed)/Zenject-usage.dll" Private="false" />
+    <Reference Include="IPA.Loader" HintPath="$(Managed)/IPA.Loader.dll" Private="false" />
+    <Reference Include="0Harmony" HintPath="$(BeatSaberDir)/Libs/0Harmony.dll" Private="false" />
+    <Reference Include="BSML" HintPath="$(BeatSaberDir)/Plugins/BSML.dll" Private="false" />
+    <Reference Include="SiraUtil" HintPath="$(BeatSaberDir)/Plugins/SiraUtil.dll" Private="false" />
+  </ItemGroup>
+
+</Project>
